@@ -13,11 +13,10 @@ import {
 } from "lucide-react";
 
 const Sidebar = () => {
-  const { theme } = useTheme();
   return (
     <div className="flex flex-col h-screen bg-white dark:bg-[#1C1C25] dark:text-yellow w-[307px] border-r-2 dark:border-0 border-[#C0C5CB5E]">
       {/* sidebar logo */}
-      <div className="flex justify-start items-start p-10">
+      <div className="flex justify-start items-start p-5">
         <BadgeCent size="80" color="#c9bf4d" />
       </div>
 
