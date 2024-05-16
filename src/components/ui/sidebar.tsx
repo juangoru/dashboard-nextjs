@@ -1,6 +1,5 @@
 "use client";
-import Link from "next/link";
-import { useTheme } from "next-themes";
+import { NavLink } from "@/components/ui/navlink";
 import {
   LayoutDashboard,
   BadgeCent,
@@ -23,49 +22,35 @@ const Sidebar = () => {
       {/* side nav */}
       <nav className="flex flex-col justify-between flex-grow p-10 space-y-2">
         <div>
-          <Link href={"/"}>
-            <div className="flex items-center gap-4 py-3 px-8 font-medium w-[208px] bg-fillColor rounded-lg hover:bg-glass transition-colors duration-200">
-              <LayoutDashboard size="20" />
-              <span>Dashboard</span>
-            </div>
-          </Link>
-          <Link href={"/account"}>
-            <div className="flex items-center gap-4 py-3 px-8 font-medium w-[208px] rounded-lg hover:bg-glass transition-colors duration-200">
-              <UserRound size="20" />
-              <span>Account</span>
-            </div>
-          </Link>
-          <Link href={"/chart"}>
-            <div className="flex items-center gap-4 py-3 px-8 font-medium w-[208px] rounded-lg hover:bg-glass transition-colors duration-200">
-              <PieChart size="20" />
-              <span>Chart</span>
-            </div>
-          </Link>
-          <Link href={"/wallet"}>
-            <div className="flex items-center gap-4 py-3 px-8 font-medium w-[208px] rounded-lg hover:bg-glass transition-colors duration-200">
-              <Wallet size="20" />
-              <span>Wallet</span>
-            </div>
-          </Link>
-          <Link href={"/news"}>
-            <div className="flex items-center gap-4 py-3 px-8 font-medium w-[208px] rounded-lg hover:bg-glass transition-colors duration-200">
-              <Newspaper size="20" />
-              <span>News</span>
-            </div>
-          </Link>
-          <Link href={"/settings"}>
-            <div className="flex items-center gap-4 py-3 px-8 font-medium w-[208px] rounded-lg hover:bg-glass transition-colors duration-200">
-              <Settings size="20" />
-              <span>Settings</span>
-            </div>
-          </Link>
+          <NavLink href="/">
+            <LayoutDashboard size="20" />
+            <span>Dashboard</span>
+          </NavLink>
+          <NavLink href="/account">
+            <UserRound size="20" />
+            <span>Account</span>
+          </NavLink>
+          <NavLink href="/chart">
+            <PieChart size="20" />
+            <span>Chart</span>
+          </NavLink>
+          <NavLink href="/wallet">
+            <Wallet size="20" />
+            <span>Wallet</span>
+          </NavLink>
+          <NavLink href="/news">
+            <Newspaper size="20" />
+            <span>News</span>
+          </NavLink>
+          <NavLink href="/settings">
+            <Settings size="20" />
+            <span>Settings</span>
+          </NavLink>
         </div>
-        <Link href={"/"}>
-          <div className="flex items-center gap-4 py-3 px-8 font-medium w-[208px] rounded-lg hover:bg-glass transition-colors duration-200">
-            <LogOut size="20" />
-            <span>Log out</span>
-          </div>
-        </Link>
+        <NavLink href="/">
+          <LogOut size="20" />
+          <span>Log out</span>
+        </NavLink>
       </nav>
     </div>
   );
