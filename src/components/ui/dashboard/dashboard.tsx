@@ -14,13 +14,13 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Litecoin } from "../SVG/litecoin";
-import { Bitcoin } from "../SVG/bitcoin";
-import { Ethereum } from "../SVG/ethereum";
-import { Solana } from "../SVG/solana";
-import { ComboboxPopover } from "./dashboard/comboBox";
-import { Chart } from "../SVG/char";
-import { ComboboxCripto } from "./dashboard/comboBoxCrypto";
+import { Litecoin } from "@/components/SVG/litecoin";
+import { Bitcoin } from "@/components/SVG/bitcoin";
+import { Ethereum } from "@/components/SVG/ethereum";
+import { Solana } from "@/components/SVG/solana";
+import { ComboboxPopover } from "./comboBox";
+import { Chart } from "@/components/SVG/char";
+import { ComboboxCripto } from "./comboBoxCrypto";
 
 const Dashboard = () => {
   return (
