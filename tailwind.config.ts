@@ -14,7 +14,7 @@ const config = {
   theme: {
     container: {
       center: true,
-      padding: "2rem",
+      padding: { 10: "2rem", "5": "1.25rem" },
       screens: {
         "2xl": "1400px",
       },
@@ -25,12 +25,15 @@ const config = {
       },
       colors: {
         border: "hsl(var(--border))",
+        grayText: "#808080",
         input: "hsl(var(--input))",
+        down: "#ff0000",
+        up: "#00ff00",
         ring: "hsl(var(--ring))",
         fillColor: "#c9bf4d",
         glass: "rgba(255,255,255,0.4)",
         hoverColor: "#cfcdb6",
-        background: "hsl(var(--background))",
+        background: "#1C1C25",
         foreground: "hsl(var(--foreground))",
         primary: {
           DEFAULT: "hsl(var(--primary))",
@@ -82,7 +85,7 @@ const config = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [require("tailwindcss-animate"), require("tailwind-scrollbar")],
 } satisfies Config;
 
 export default config;
