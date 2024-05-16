@@ -29,31 +29,31 @@ const Sidebar = () => {
               <span>Dashboard</span>
             </div>
           </Link>
-          <Link href={"/"}>
+          <Link href={"/account"}>
             <div className="flex items-center gap-4 py-3 px-8 font-medium w-[208px] rounded-lg hover:bg-glass transition-colors duration-200">
               <UserRound size="20" />
               <span>Account</span>
             </div>
           </Link>
-          <Link href={"/"}>
+          <Link href={"/chart"}>
             <div className="flex items-center gap-4 py-3 px-8 font-medium w-[208px] rounded-lg hover:bg-glass transition-colors duration-200">
               <PieChart size="20" />
               <span>Chart</span>
             </div>
           </Link>
-          <Link href={"/"}>
+          <Link href={"/wallet"}>
             <div className="flex items-center gap-4 py-3 px-8 font-medium w-[208px] rounded-lg hover:bg-glass transition-colors duration-200">
               <Wallet size="20" />
               <span>Wallet</span>
             </div>
           </Link>
-          <Link href={"/"}>
+          <Link href={"/news"}>
             <div className="flex items-center gap-4 py-3 px-8 font-medium w-[208px] rounded-lg hover:bg-glass transition-colors duration-200">
               <Newspaper size="20" />
               <span>News</span>
             </div>
           </Link>
-          <Link href={"/"}>
+          <Link href={"/settings"}>
             <div className="flex items-center gap-4 py-3 px-8 font-medium w-[208px] rounded-lg hover:bg-glass transition-colors duration-200">
               <Settings size="20" />
               <span>Settings</span>
